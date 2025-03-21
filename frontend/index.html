@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign NFT Fundraiser</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Modern font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- Animation library -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <h1>Campaign NFT Fundraiser</h1>
+            <button id="connectWalletButton">Connect Wallet</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="animate__animated animate__fadeInDown">Mint Your NFT Today</h2>
+            <p class="animate__animated animate__fadeInUp">Support the cause and own a unique NFT that makes a difference.</p>
+            <button id="exploreButton" class="animate__animated animate__fadeIn">Explore</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card animate__animated animate__fadeInLeft">
+            <h3>Current NFT Price</h3>
+            <p><span id="nftPrice">Loading...</span> ETH</p>
+        </div>
+        <div class="feature-card animate__animated animate__fadeInRight">
+            <h3>Contract Balance</h3>
+            <p><span id="contractBalance">Loading...</span> ETH</p>
+        </div>
+    </section>
+
+    <!-- Mint NFT Section -->
+    <section class="mint-nft">
+        <h2>Mint Your NFT</h2>
+        <input type="text" id="tokenURI" placeholder="Enter Token URI">
+        <button id="mintNFTButton">Mint NFT</button>
+        <div id="contributionMessage" role="alert"></div>
+    </section>
+
+    <!-- Admin Section -->
+    <section class="admin-controls">
+        <h2>Admin Controls</h2>
+        <button id="withdrawFundsButton">Withdraw Funds</button>
+        <input type="number" id="newPrice" placeholder="New Price per NFT (ETH)">
+        <button id="setPriceButton">Set New Price</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Powered by Campaign Fundraiser Smart Contract</p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
